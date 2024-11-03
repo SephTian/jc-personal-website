@@ -14,9 +14,9 @@ function ProjectItem({ link, image, stacks, title }: Props) {
         <img className="object-cover object-top w-full h-full" src={image} alt="web image" />
       </div>
       <div className="pb-3 px-2 space-y-2">
-        <p className="text-lg underline font-bold">{title}</p>
+        <p className="text-lg">{title}</p>
         <div className="flex gap-2 items-center">
-          <span className="pr-2 border-r-2 border-customBlack">Stack</span>
+          <span className="pr-2 border-r-2 border-customBlack font-bold">Stack</span>
           {stacks.map((stack) => {
             return (
               <img
