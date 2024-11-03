@@ -36,6 +36,9 @@ export default {
         customWhite: '#fdfdfd',
         customGray: '#f2f2f2',
       },
+      transitionProperty: {
+        border: 'border', // Custom transition for height and border
+      },
     },
   },
   plugins: [],

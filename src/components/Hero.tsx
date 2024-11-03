@@ -3,11 +3,20 @@ import Button from './UI/Button';
 import PlatformButton from './UI/PlatformButton';
 import { AiOutlineDiscord, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import { TbSend } from 'react-icons/tb';
+import { motion, Variants } from 'framer-motion';
+import { useFadeInUpFramer } from '../hooks/useFadeInUpFramer';
 
 function Hero() {
+  const [variants, hidden, visible]: [Variants, string, string] = useFadeInUpFramer();
   return (
     <section className="p-4">
-      <div className="relative bg-customGray px-4 py-8 border border-customBlack rounded-sm h-fit w-full shadow-div flex flex-col justify-center items-center gap-3 sm:gap-6 md:py-14 md:flex-row">
+      <motion.div
+        variants={variants}
+        initial={hidden}
+        whileInView={visible}
+        viewport={{ once: true }}
+        className="relative bg-customGray px-4 py-8 border border-customBlack rounded-sm h-fit w-full shadow-div flex flex-col justify-center items-center gap-3 sm:gap-6 md:py-14 md:flex-row"
+      >
         <div className="flex gap-3 items-center">
           <div className="flex flex-col gap-4 h-[250px] items-center md:h-[310px]">
             <div className="flex-grow w-1 bg-customBlack"></div>
@@ -38,7 +47,7 @@ function Hero() {
           </div>
         </div>
         <div className="absolute top-3 right-3 font-bold text-3xl sm:text-4xl sm:top-4 sm:right-4 md:text-5xl md:top-5 md:right-5">JC.</div>
-      </div>
+      </motion.div>
     </section>
   );
 }

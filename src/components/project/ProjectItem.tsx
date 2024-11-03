@@ -1,4 +1,6 @@
+import { motion, Variants } from 'framer-motion';
 import { RiArrowRightLine } from 'react-icons/ri';
+import { useFadeInUpFramer } from '../../hooks/useFadeInUpFramer';
 
 type Props = {
   link: string;
@@ -8,8 +10,9 @@ type Props = {
 };
 
 function ProjectItem({ link, image, stacks, title }: Props) {
+  const [variants]: [Variants, string, string] = useFadeInUpFramer();
   return (
-    <a target="_blank" href={link} className="group cursor-pointer relative block bg-customGray border border-customBlack  rounded-sm shadow-div">
+    <motion.a variants={variants} target="_blank" href={link} className="group cursor-pointer relative block bg-customGray border border-customBlack  rounded-sm shadow-div">
       <div className="border-b border-customBlack w-full h-[200px]">
         <img className="object-cover object-top w-full h-full" src={image} alt="web image" />
       </div>
@@ -32,7 +35,7 @@ function ProjectItem({ link, image, stacks, title }: Props) {
         <RiArrowRightLine className="h-5 w-5 text-customWhite" />
         <p className="text-customWhite">View Site</p>
       </div>
-    </a>
+    </motion.a>
   );
 }
 export default ProjectItem;
