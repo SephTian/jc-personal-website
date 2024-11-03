@@ -3,7 +3,7 @@ import PlatformButton from './UI/PlatformButton';
 
 function Footer() {
   return (
-    <footer className="w-full bg-customWhite border-t border-customBlack">
+    <footer className="w-full bg-customGray border-t border-customBlack">
       <div className="mx-auto w-full max-w-[1200px] px-4 py-10">
         <div className="flex justify-between items-center gap-8">
           <div className="space-y-4">

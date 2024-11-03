@@ -39,8 +39,8 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <div className={`${isScrolled ? 'bottom-6' : '-bottom-24'} transition-all ease-in z-20 fixed right-6`}>
-        <Button link="#" className="bg-customWhite">
+      <div className={`${isScrolled ? 'bottom-10' : '-bottom-24'} transition-all ease-in z-20 fixed right-10`}>
+        <Button link="#" className="bg-[#F9AD4F]">
           <MdKeyboardArrowUp className="h-10 w-10" />
         </Button>
       </div>
