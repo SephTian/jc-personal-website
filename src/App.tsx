@@ -8,9 +8,16 @@ import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx';
 import Button from './components/UI/Button.tsx';
 import { useEffect, useState } from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +44,7 @@ function App() {
           <MdKeyboardArrowUp className="h-10 w-10" />
         </Button>
       </div>
+      <motion.div className="fixed right-0 bottom-0 left-0 h-3 bg-customBlack origin-[0%]" style={{ scaleX }}></motion.div>
     </>
   );
 }
