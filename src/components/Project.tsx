@@ -9,7 +9,7 @@ function Project() {
         <div className="h-1 bg-[#121212] flex-grow"></div>
       </header>
       <article className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <ProjectItem link="youtube.com" image="/images/jc-personal-website.jpg" stacks={['react', 'tailwind']} title="JC. - Personal Website" />
+        <ProjectItem link="https://josephjc.vercel.app/" image="/images/jc-personal-website.jpg" stacks={['react', 'tailwind']} title="JC. - Personal Website" />
       </article>
     </section>
   );
