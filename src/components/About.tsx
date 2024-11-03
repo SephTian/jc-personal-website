@@ -44,8 +44,6 @@ function About() {
           </div>
         </div>
       </article>
-      <br />
-      <br />
     </section>
   );
 }
