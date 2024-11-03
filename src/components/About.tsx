@@ -27,7 +27,7 @@ function About() {
         </motion.div>
         <div className="space-y-6">
           <motion.p viewport={{ once: true }} variants={variants} initial={hidden} whileInView={visible} className="text-pretty text-justify md:max-w-[600px]">
-            Hi, I'm Joseph, a passionate Front End Web Developer focused on crafting responsive, user-friendly websites that balance performance and design.
+            Hi, I'm Joseph, a passionate Front End Developer focused on crafting responsive, user-friendly websites that balance performance and design.
           </motion.p>
           <motion.p viewport={{ once: true }} variants={variants} initial={hidden} whileInView={visible} className="text-pretty text-justify md:max-w-[600px]">
             I strive to deliver high-quality, accessible code that enhances user experience and aligns with business goals.
