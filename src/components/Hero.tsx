@@ -7,7 +7,7 @@ import { TbSend } from 'react-icons/tb';
 function Hero() {
   return (
     <section className="p-4">
-      <div className="relative bg-customGray px-4 py-8 border border-customBlack rounded-sm h-fit w-full shadow-div flex flex-col justify-center items-center gap-3 sm:gap-6 md:py-28 md:flex-row">
+      <div className="relative bg-customGray px-4 py-8 border border-customBlack rounded-sm h-fit w-full shadow-div flex flex-col justify-center items-center gap-3 sm:gap-6 md:py-14 md:flex-row">
         <div className="flex gap-3 items-center">
           <div className="flex flex-col gap-4 h-[250px] items-center md:h-[310px]">
             <div className="flex-grow w-1 bg-customBlack"></div>
