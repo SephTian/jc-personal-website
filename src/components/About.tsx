@@ -5,6 +5,8 @@ import { IoDocumentTextOutline } from 'react-icons/io5';
 import SectionTitle from './UI/SectionTitle';
 import Skill from './UI/Skill';
 import { motion, Variants } from 'framer-motion';
+import ExperienceItem from './about/ExperienceItem';
+import ExperiencePole from './about/ExperiencePole';
 
 function About() {
   const [variants, hidden, visible]: [Variants, string, string] = useFadeInUpFramer();
@@ -52,6 +54,27 @@ function About() {
               </div>
             </motion.div>
           </div>
+        </div>
+        <h3 className="font-bold text-center text-lg md:text-xl"> Experience</h3>
+        <div className="flex flex-col justify-center items-center">
+          <div className="grid grid-cols-[300px_auto] md:grid-cols-[300px_auto_300px] gap-9">
+            <div className="order-1">
+              <ExperienceItem job="FRONT END WEB DEVELOPER" workplace="PT Cross Network Indonesia" date="Jul 2023 - Dec 2023 | 6 months" />
+            </div>
+            <div className="order-2 ">
+              <ExperiencePole />
+            </div>
+            <div className="order-3 hidden"></div>
+          </div>
+          {/* <div className="grid grid-cols-[300px_auto] md:grid-cols-[300px_auto_300px] gap-9">
+            <div className="hidden md:order-1 md:block"></div>
+            <div className="order-2">
+              <ExperiencePole />
+            </div>
+            <div className="order-1 md:order-3">
+              <ExperienceItem job="FRONT END WEB DEVELOPER" workplace="PT Cross Network Indonesia" date="Jul 2023 - Dec 2023 | 6 months" />
+            </div>
+          </div> */}
         </div>
       </article>
     </section>
