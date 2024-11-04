@@ -1,14 +1,12 @@
 // import { useState } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import NavBar from './components/NavBar.tsx';
-import Hero from './components/Hero.js';
-import About from './components/About.tsx';
-import Project from './components/Project.tsx';
-import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx';
 import Button from './components/UI/Button.tsx';
 import { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage.tsx';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,10 +31,9 @@ function App() {
     <>
       <NavBar isScrolled={isScrolled} />
       <main className="mx-auto w-full max-w-[1200px] mb-10">
-        <Hero />
-        <About />
-        <Project />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </main>
       <Footer />
       <div className={`${isScrolled ? 'bottom-10' : '-bottom-24'} transition-all ease-in z-20 fixed right-10`}>
