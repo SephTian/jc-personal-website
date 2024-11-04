@@ -38,7 +38,7 @@ function About() {
               I strive to deliver high-quality, accessible code that enhances user experience and aligns with business goals.
             </motion.p>
             <div className="w-full">
-              <Button link="../assets/abimg.jpg" className="w-full gap-2 bg-[#FF9AA8] h-fit px-6 py-3 md:px-6 md:py-4">
+              <Button link="/files/resume.pdf" className="w-full gap-2 bg-[#FF9AA8] h-fit px-6 py-3 md:px-6 md:py-4">
                 <IoDocumentTextOutline className="bg-transparent w-5 h-5 " /> Resume
               </Button>
             </div>
