@@ -59,7 +59,7 @@ function About() {
         <div className="flex flex-col justify-center items-center">
           <div className="grid grid-cols-[300px_auto] md:grid-cols-[300px_auto_300px] gap-9">
             <div className="order-1">
-              <ExperienceItem job="FRONT END WEB DEVELOPER" workplace="PT Cross Network Indonesia" date="Jul 2023 - Dec 2023 | 6 months" />
+              <ExperienceItem job="FRONT END WEB DEVELOPER INTERSHIP" workplace="PT Cross Network Indonesia" date="Jul 2023 - Dec 2023 | 6 months" />
             </div>
             <div className="order-2 ">
               <ExperiencePole />
