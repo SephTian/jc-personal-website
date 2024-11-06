@@ -30,19 +30,28 @@
   font-style: italic;
 }
 
+:root {
+  --primary: #121212;
+  --background: #fdfdfd;
+}
+[data-theme='dark'] {
+  --primary: #fdfdfd;
+  --background: #121212;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: SpaceMono, Inter, sans-serif;
 }
 
 body {
-  color: #121212;
-  background-color: #fdfdfd;
+  scroll-behavior: smooth;
+  font-family: SpaceMono, Inter, sans-serif;
+  color: var(--primary);
+  background-color: var(--background);
   min-width: 320px;
   min-height: 100vh;
 }
