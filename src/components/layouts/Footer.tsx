@@ -1,5 +1,5 @@
 import { AiOutlineDiscord, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
-import PlatformButton from './UI/PlatformButton';
+import PlatformButton from '../UI/PlatformButton';
 
 function Footer() {
   return (

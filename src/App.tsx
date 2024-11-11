@@ -1,12 +1,12 @@
 // import { useState } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md';
-import NavBar from './components/NavBar.tsx';
-import Footer from './components/Footer.tsx';
 import Button from './components/UI/Button.tsx';
 import { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage.tsx';
+import NavBar from './components/layouts/NavBar.tsx';
+import Footer from './components/layouts/Footer.tsx';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);

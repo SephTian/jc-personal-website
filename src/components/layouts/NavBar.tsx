@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MdOutlineMenu } from 'react-icons/md';
 import { motion, Variants } from 'framer-motion';
-import { useFadeInDownFramer } from '../hooks/useFadeInDownFramer';
+import { useFadeInDownFramer } from '../../hooks/useFadeInDownFramer';
 
 type Props = {
   isScrolled: boolean;
