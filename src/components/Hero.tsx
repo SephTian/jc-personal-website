@@ -35,9 +35,9 @@ function Hero() {
           </div>
         </div>
         <div className="space-y-3 md:space-y-8 md:pt-12">
-          <h1 className="text-2xl font-bold text-center sm:text-3xl md:text-start lg:text-4xl">Front End Developer</h1>
+          <h1 className="text-2xl font-bold text-center sm:text-3xl md:text-start lg:text-4xl">Fullstack Developer</h1>
           <p className="text-pretty text-md text-center max-w-[500px] sm:text-xl md:text-start sm:max-w-[650px] lg:text-2xl">
-            Hello👋, my name is Joseph Christian, <br /> front end developer from Indonesia.
+            Hello👋, my name is Joseph Christian, <br /> Fullstack developer from Indonesia.
           </p>
           <p className="text-pretty text-md text-center max-w-[500px] sm:text-xl md:text-start sm:max-w-[650px] lg:text-2xl">Let’s create something amazing together!</p>
           <div className="w-full pt-4 flex justify-center md:mt-0 md:pt-0 md:justify-start">
