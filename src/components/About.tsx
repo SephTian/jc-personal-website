@@ -10,7 +10,7 @@ import ExperiencePole from './about/ExperiencePole';
 
 function About() {
   const [variants, hidden, visible]: [Variants, string, string] = useFadeInUpFramer();
-  const skills = ['html', 'css', 'bootstrap', 'tailwind', 'js', 'ts', 'react', 'php', 'laravel'];
+  const skills = ['html', 'css', 'bootstrap', 'tailwind', 'js', 'ts', 'react', 'python', 'php', 'laravel', 'postgres', 'mysql'];
   return (
     <section id="about" className="p-4 w-full pt-24">
       <header className="flex justify-center items-center gap-6 mb-12">
@@ -66,15 +66,15 @@ function About() {
             </div>
             <div className="order-3 hidden"></div>
           </div>
-          {/* <div className="grid grid-cols-[300px_auto] md:grid-cols-[300px_auto_300px] gap-9">
+          <div className="grid grid-cols-[300px_auto] md:grid-cols-[300px_auto_300px] gap-9">
             <div className="hidden md:order-1 md:block"></div>
             <div className="order-2">
               <ExperiencePole />
             </div>
             <div className="order-1 md:order-3">
-              <ExperienceItem job="FRONT END WEB DEVELOPER" workplace="PT Cross Network Indonesia" date="Jul 2023 - Dec 2023 | 6 months" />
+              <ExperienceItem job="FULLSTACK DEVELOPER (FREELANCE)" workplace="Petra Christian University" date="Feb 2024 - Jun 2024 | 5 months" />
             </div>
-          </div> */}
+          </div>
         </div>
       </article>
     </section>
